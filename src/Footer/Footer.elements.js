@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { FaMagento } from "react-icons/fa";
+import { RiCodeBoxFill } from "react-icons/ri";
+
 
 export const FooterContainer = styled.div`
   background-color: #101522;
@@ -144,7 +145,7 @@ export const SocialLogo = styled(Link)`
   margin-bottom: 16px;
 `;
 
-export const SocialIcon = styled(FaMagento)`
+export const SocialIcon = styled(RiCodeBoxFill)`
   margin-right: 10px;
 `;
 

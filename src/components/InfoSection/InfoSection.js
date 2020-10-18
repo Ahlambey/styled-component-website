@@ -27,10 +27,11 @@ export default function InfoSection({
   img, 
   alt, 
   start,
+  id
 }) {
   return (
     <>
-      <InfoSec lightBg={lightBg}>
+      <InfoSec lightBg={lightBg} id={id}>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColum>

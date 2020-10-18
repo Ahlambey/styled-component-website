@@ -1,11 +1,9 @@
-
-import React from 'react';
-import { Button } from '../../globalStyles';
-import { AiFillThunderbolt } from 'react-icons/ai';
-import { GiCrystalBars } from 'react-icons/gi';
-import { GiCutDiamond, GiRock } from 'react-icons/gi';
-import { GiFloatingCrystal } from 'react-icons/gi';
-import { IconContext } from 'react-icons/lib';
+import React from "react";
+import { Button } from "../../globalStyles";
+import { IconContext } from "react-icons/lib";
+import { SiAffinitydesigner } from "react-icons/si";
+import { BiCodeAlt } from "react-icons/bi";
+import { RiTestTubeFill } from "react-icons/ri";
 import {
   PricingSection,
   PricingWrapper,
@@ -18,60 +16,60 @@ import {
   PricingCardCost,
   PricingCardLength,
   PricingCardFeatures,
-  PricingCardFeature
-} from './Pricing.elements';
+  PricingCardFeature,
+} from "./Pricing.elements";
 
 function Pricing() {
   return (
-    <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
-      <PricingSection>
+    <IconContext.Provider value={{ color: "#a9b3c1", size: 64 }}>
+      <PricingSection id="services">
         <PricingWrapper>
           <PricingHeading>Our Services</PricingHeading>
           <PricingContainer>
-            <PricingCard to='/sign-up'>
+            <PricingCard to="/sign-up">
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiRock />
+                  <SiAffinitydesigner />
                 </PricingCardIcon>
-                <PricingCardPlan>Starter Pack</PricingCardPlan>
-                <PricingCardCost>$99.99</PricingCardCost>
+                <PricingCardPlan>UI/UX Design</PricingCardPlan>
+                <PricingCardCost>$9.99</PricingCardCost>
                 <PricingCardLength>per month</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>100 New Users</PricingCardFeature>
-                  <PricingCardFeature>$10,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Retargeting analytics</PricingCardFeature>
+                  <PricingCardFeature>100 Courses</PricingCardFeature>
+                  <PricingCardFeature>10 hands on projects</PricingCardFeature>
+                  <PricingCardFeature>10 team projects</PricingCardFeature>
                 </PricingCardFeatures>
                 <Button primary>Choose Plan</Button>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to='/sign-up'>
+            <PricingCard to="/sign-up">
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiCrystalBars />
+                  <RiTestTubeFill />
                 </PricingCardIcon>
-                <PricingCardPlan>Gold Rush</PricingCardPlan>
-                <PricingCardCost>$299.99</PricingCardCost>
+                <PricingCardPlan>Testing</PricingCardPlan>
+                <PricingCardCost>$20.99</PricingCardCost>
                 <PricingCardLength>per month</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>1000 New Users</PricingCardFeature>
-                  <PricingCardFeature>$50,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
+                  <PricingCardFeature>100 Courses</PricingCardFeature>
+                  <PricingCardFeature>10 hands on projects</PricingCardFeature>
+                  <PricingCardFeature>10 team projects</PricingCardFeature>
                 </PricingCardFeatures>
                 <Button primary>Choose Plan</Button>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to='/sign-up'>
+            <PricingCard to="/sign-up">
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiCutDiamond />
+                  <BiCodeAlt />
                 </PricingCardIcon>
-                <PricingCardPlan>Diamond Kings</PricingCardPlan>
-                <PricingCardCost>$999.99</PricingCardCost>
+                <PricingCardPlan>Web Developement</PricingCardPlan>
+                <PricingCardCost>$250.99</PricingCardCost>
                 <PricingCardLength>per month</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>Unlimited Users</PricingCardFeature>
-                  <PricingCardFeature>Unlimited Budget</PricingCardFeature>
-                  <PricingCardFeature>24/7 Support</PricingCardFeature>
+                  <PricingCardFeature>200 courses</PricingCardFeature>
+                  <PricingCardFeature>25 hands on projects</PricingCardFeature>
+                  <PricingCardFeature>20 team projects</PricingCardFeature>
                 </PricingCardFeatures>
                 <Button primary>Choose Plan</Button>
               </PricingCardInfo>
@@ -83,4 +81,3 @@ function Pricing() {
   );
 }
 export default Pricing;
-

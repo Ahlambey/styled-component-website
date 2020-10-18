@@ -87,9 +87,9 @@ export default function Footer() {
         <SocialMediaWrap>
           <SocialLogo to='/'>
             <SocialIcon />
-            ULTIME
+            Dev:School
           </SocialLogo>
-          <WebsiteRights>ULTIME © 2020</WebsiteRights>
+          <WebsiteRights>Dev:School © 2020</WebsiteRights>
           <SocialIcons>
             <SocialIconLink href="/" target="_blank" aria-label="FaceBook">
               <FaFacebook />
